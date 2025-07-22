@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="index.css">
   <script src="index.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
   <header>
@@ -33,9 +36,9 @@
     <a href="KAVI-SRI-MAHA-P%20updated%20resume.pdf" class="resume-btn floating-resume" download><i class="fas fa-download"></i> Resume</a>
   </header>
 
-  <section id="about">
+  <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
-    <p>I'm a 3rd year undergraduate student with a CGPA of 8.1. Passionate about coding and learning new technologies. I aim to contribute to organizational success while growing professionally in the IT field.</p>
+    <p>“I’m a final-year undergraduate student with a CGPA of 8.1. Passionate about coding and learning new technologies.I'm currently seeking part-time/internship opportunities to apply my full stack development skills in real-world projects.I aim to contribute to organizational success while growing professionally in the IT field.</p>
     <ul class="skills">
       <li>Problem Solving</li>
       <li>Team Collaboration</li>
@@ -46,20 +49,36 @@
     </ul>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>CRUD Application</h3>
-      <p>Technologies: PHP, SQL, HTML, CSS, JavaScript</p>
-      <p>A web-based app to Create, Read, Update, and Delete data.</p>
-      <a href="https://github.com/kavisrimaha/Projects.git" target="_blank">View</a>
-    </div>
-    <div class="project">
-      <h3>Weather App</h3>
-      <p>Used APIs to fetch and display real-time weather data.</p>
-      <a href="https://github.com/kavisrimaha/Projects.git" target="_blank">View</a>
-    </div>
-  </section>
+  <section id="projects" >
+  <h2>Projects</h2>
+<div class="project-card" data-aos="fade-right">
+  <h3>CRUD Application</h3>
+  <p><strong>Technologies:</strong> PHP, SQL, HTML, CSS, JavaScript</p>
+  <p>Developed a responsive web app using PHP and MySQL to perform CRUD operations on student data.</p>
+
+  <!-- Embedded Local Video -->
+<video width="100%" height="315" controls style="margin: 15px 0;">
+  <source src="./assets/Crud Project.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+  <a class="github-link" href="https://github.com/kavisrimaha/CRUD-App" target="_blank">
+    <i class="fab fa-github"></i> View on GitHub
+  </a>
+</div>
+
+
+  <div class="project-card" data-aos="fade-left">
+    <h3>Weather App</h3>
+    <p><strong>Technologies:</strong> HTML, CSS, JavaScript, OpenWeatherMap API</p>
+    <p>Used OpenWeatherMap API to fetch and display real-time weather updates based on user input.</p>
+    <a class="github-link" href="https://github.com/kavisrimaha/Weather-App" target="_blank">
+      <i class="fab fa-github"></i> View on GitHub
+    </a>
+  </div>
+</section>
+
 
   <section id="certifications">
     <h2>Certifications</h2>
@@ -70,10 +89,10 @@
     </ul>
   </section>
 
-  <section id="contact">
+  <section id="contact"data-aos="fade-right">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:kavisri4812@gmail.com">kavisri4812@gmail.com</a></p>
-    <p>Phone: <a href="tel:7904991178">7904991178</a></p>
+    <p>mailto:<a href="mailto:kavisri4812@gmail.com">kavisri4812@gmail.com</a></p>
+    <p>Phone: <a href="tel:7904991178">+91 79049 91178</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/kavi-sri-maha">linkedin.com/in/kavi-sri-maha</a></p>
     <p>GitHub: <a href="https://github.com/kavisrimaha">github.com/kavisrimaha</a></p>
   </section>
@@ -81,5 +100,8 @@
   <footer>
     <p>&copy; 2025 Kavi Sri Maha</p>
   </footer>
+  <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
 </body>
 </html>
